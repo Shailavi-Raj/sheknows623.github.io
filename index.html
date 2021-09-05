@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODAY,S SPECIAL</title>
+  </head>
+  <body bgimg="img/BACKGROUND.jpg" bgcolor="#cccccc">
+    <center>
+      <h2>LIGHTINING OF VIRTUAL LAMP</h2>
+      <video id="video" width="320" height="480" autoplay muted loop>
+        <source id="source" src="video/first.mp4" type="video/mp4" />
+      </video>
+    </center>
+<CENTER>
+    <input
+      type="button"
+      value="FIRST"
+      onclick="changeVideo('video/BS.mp4')"
+    />
+    <input
+      type="button"
+      value="SECOND"
+      onclick="changeVideo('video/SC.mp4')"
+    />
+    <input
+      type="button"
+      value=" THIRD"
+      onclick="changeVideo('video/PL.mp4')"
+    />
+    <input
+      type="button"
+      value="FOURTH"
+      onclick="changeVideo('video/BKP.mp4')"
+    />
+    <input
+      type="button"
+      value="FIFTH"
+      onclick="changeVideo('video/AJ.mp4')"
+    />
+    <input
+      type="button"
+      value="SIXTH"
+      onclick="changeVideo('video/PK.mp4')"
+    />
+    <input
+      type="button"
+      value="SEVENTH"
+      onclick="changeVideo('video/TK.mp4')"
+    />
+</CENTER>
+    <script>
+      function changeVideo(path) {
+        let video = document.getElementById("video");
+        let source = document.getElementById("source");
+
+        source.setAttribute("src", path);
+
+        video.load();
+        video.play();
+      }
+    </script>
+  </body>
+</html>

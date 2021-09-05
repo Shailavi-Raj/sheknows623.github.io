@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODAY,S SPECIAL</title>
+  </head>
+  <body bgimg="BACKGROUND.jpg" bgcolor="#cccccc">
+    <center>
+      <h2>LIGHTINING OF VIRTUAL LAMP</h2>
+      <video id="video" width="320" height="480" autoplay muted loop>
+        <source id="source" src="video/first.mp4" type="video/mp4" />
+      </video>
+    </center>
+    <center>
+      <input
+        type="button"
+        value="Dr. Bhawna Sinha"
+        onclick="changeVideo('video/BS.mp4')"
+      />
+      <input
+        type="button"
+        value="Ms. Sushmita Chakraborty"
+        onclick="changeVideo('video/SC.mp4')"
+      />
+      <input
+        type="button"
+        value=" Ms Poonam A Lakra"
+        onclick="changeVideo('video/PL.mp4')"
+      />
+      <input
+        type="button"
+        value="Mr. Braj Kishore Prasad "
+        onclick="changeVideo('video/BKP.mp4')"
+      />
+      <input
+        type="button"
+        value="Ajit Kumar Singh"
+        onclick="changeVideo('video/AJ.mp4')"
+      />
+      <input
+        type="button"
+        value="Mr.Praveen Kumar"
+        onclick="changeVideo('video/PK.mp4')"
+      />
+      <input
+        type="button"
+        value=" Dr. Tapan Kant"
+        onclick="changeVideo('video/TK.mp4')"
+      />
+    </center>
+
+    <script>
+      function changeVideo(path) {
+        let video = document.getElementById("video");
+        let source = document.getElementById("source");
+
+        source.setAttribute("src", path);
+
+        video.load();
+        video.play();
+      }
+    </script>
+  </body>
+</html>
